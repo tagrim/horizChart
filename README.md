@@ -22,8 +22,8 @@ horizChart - horizotal  pseudo-3d bar/progressbar
   <tr><td>{backgroundColorEnd: '#string'}</td><td> Container circle color</td></tr>
   <tr><td>{circleRadius: int}</td><td> Circle shapes radius</td></tr>
   <tr><td>{masterOverlayOpacity: float}</td><td> Opacity on overlay/intersect area</td></tr>
-  <tr><td>{vertLines: bool}</td><td> Vertical lines visiblity</td></tr>
-  <tr><td>{horzLines: bool}</td><td> Horizontal lines visiblity</td></tr>
+  <tr><td>{vertLines: bool}</td><td> Vertical lines visibility</td></tr>
+  <tr><td>{horzLines: bool}</td><td> Horizontal lines visibility</td></tr>
 </tbody>
 
 
