@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>horizChart</title>
+		<style>
+			* {font-family: 'Tahoma'; font-size: 12px;}
+			a {cursor: pointer; display: block; width: 100%; padding: 5px 0; background: #f0f0f0; color: #000;}
+			a:hover {color: #0000ff;}
+			table {margin: 20px;}
+			td {padding: 5px 10px;}
+			.hint {color: #45A852; font-style: italic;}
+			input[type='checkbox'], label {cursor: pointer;}
+		</style>
+		<script type = "text/javascript" src = "http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type = "text/javascript" src = "jquery.horizchart.js"></script>
+	</head>
+
+	<body>
+		<div id = "wrap">
+			<div style = "width: 600px; height: 130px; border: 1px solid #c3c3c3;" id = "can"></div>
+			<script>
+				$(document).ready(function(){
+					$('#can').horizBar({currValue: 300, maxValue: 400, height: 130, horzLineSpacing: 35, vertLines: true, horzLines: true});
+				});
+			</script>			
+
+		<table cellpadding = "0" cellspacing = "0">
+			<tr>
+				<td>Grapth width:</td><td><input type = "text" id = "width" value = "600"></td><td colspan = "2" class = "hint">{width: int}</td>
+			</tr>
+			<tr>
+				<td>Grapth height:</td><td><input type = "text" id = "height" value = "130"></td><td colspan = "2" class = "hint">{height: int}</td>
+			</tr>
+			<tr>
+				<td>Max value:</td><td><input type = "text" id = "maxvalue" value = "400"></td><td colspan = "2" class = "hint">{maxValue: int}</td>
+			</tr>
+			<tr>
+				<td>Current value:</td><td><input type = "text" id = "curvalue" value = "300"></td><td colspan = "2" class = "hint">{currValue: int}</td>
+			</tr>
+			<tr>
+				<td>Progr. top color:</td><td><input type = "text" id = "ptopcol" value = "#77bd49"></td><td colspan = "2" class = "hint">{progressColorTop: '#string'}</td>
+			</tr>
+			<tr>
+				<td>Progr. mid color:</td><td><input type = "text" id = "pmidcol" value = "#e0de31"></td><td colspan = "2" class = "hint">{progressColorMid: '#string'}</td>
+			</tr>
+			<tr>
+				<td>Progr. bottom color:</td><td><input type = "text" id = "pbotcol" value = "#77bd49"></td><td colspan = "2" class = "hint">{progressColorBtm: '#string'}</td>
+			</tr>
+			<tr>
+				<td>Progr. shape color:</td><td><input type = "text" id = "pshpcol" value = "#5ee062"></td><td colspan = "2" class = "hint">{progressColorEnd: '#string'}</td>
+			</tr>
+			<tr>
+				<td>Backgr. top color:</td><td><input type = "text" id = "btopcol" value = "#dddddd"></td><td colspan = "2" class = "hint">{backgroundColorTop: '#string'}</td>
+			</tr>
+			<tr>
+				<td>Backgr. mid color:</td><td><input type = "text" id = "bmidcol" value = "#eef3ec"></td><td colspan = "2" class = "hint">{backgroundColorMid: '#string'}</td>
+			</tr>
+			<tr>
+				<td>Backgr. bottom color:</td><td><input type = "text" id = "bbotcol" value = "#dddddd"></td><td colspan = "2" class = "hint">{backgroundColorBtm: '#string'}</td>
+			</tr>
+			<tr>
+				<td>Backgr. shape color:</td><td><input type = "text" id = "bshpcol" value = "#cfcfcf"></td><td colspan = "2" class = "hint">{backgroundColorEnd: '#string'}</td>
+			</tr>
+			<tr>
+				<td>Circle width:</td><td><input type = "text" id = "radius" value = "15"></td><td colspan = "2" class = "hint">{circleRadius: int}</td>
+			</tr>
+			<tr>
+				<td><label><input type = "checkbox" checked = "checked" id = "vert">Vertical lines</label></td><td class = "hint">{vertLines: bool}</td><td><label><input type = "checkbox" checked = "checked" id = "horz">Horizontal lines</label></td><td class = "hint">{horzLines: bool}</td>
+			</tr>
+			<tr>
+				<td colspan = "4" style = "text-align: center;"><a id = "update">Update graph</a></td>
+			</tr>
+			<tr>
+				<td colspan = "4" style = "text-align: center;"><a href = "jquery.horizchart.zip">Download</a></td>
+			</tr>
+		</table>
+		<script type = "text/javascript" src = "ajax.js"></script>
+		</div>
+	</body>
+</html>
