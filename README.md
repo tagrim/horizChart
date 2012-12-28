@@ -28,9 +28,8 @@ horizChart - horizotal  pseudo-3d bar/progressbar
 
 
 Sample include:
-<pre><code>
-$('#div').horizBar(
-{
+<code>
+$('#div').horizBar({
 currValue: 300, 
 maxValue: 400, 
 height: 130, 
@@ -38,6 +37,6 @@ horzLineSpacing: 35,
 vertLines: true, 
 horzLines: true
 });
-</code></pre>
+</code>
 
 </table>
